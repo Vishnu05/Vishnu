@@ -18,7 +18,7 @@ class world extends upcasting {
 		
 		upcasting object=new world();// reference variable of parent class refers to the object of child class 
 		object.hello();
-		
+		object.close();
 	}
 	
 }

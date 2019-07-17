@@ -11,4 +11,8 @@ public class Amazon implements Cloud {
     public void freeTier() {
         System.out.println("it has lot of free tier");
     }
+
+    public String cost() {
+        return "Amazon varies cost on plan you choose";
+    }
 }

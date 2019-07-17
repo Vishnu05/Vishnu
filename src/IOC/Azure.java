@@ -10,4 +10,8 @@ public class Azure implements Cloud {
     public void availability() {
         System.out.println("most of the region is also covered ");
     }
+
+    public String cost() {
+        return "the cost of Azure is less than compared to amazon";
+    }
 }

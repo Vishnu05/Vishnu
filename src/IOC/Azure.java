@@ -14,4 +14,15 @@ public class Azure implements Cloud {
     public String cost() {
         return "the cost of Azure is less than compared to amazon";
     }
+
+    private Amazon amazon;
+
+    Azure(Amazon amazons) {
+        amazon = amazons;
+    }
+
+    public String getAmazon() {
+
+        return amazon.cost();
+    }
 }

@@ -5,11 +5,26 @@
 
     <!--  Defining beans  -->
 
-    <bean id="obj" class="IOC.Amazon">
+    <bean id="obj"
+          class="IOC.Amazon">
     </bean>
 
-    <bean id="objs" class="IOC.Azure" >
+<!--    <bean id="objs" class="IOC.Azure">-->
+<!--        <constructor-arg ref="diobj"/>-->
+<!--    </bean>-->
 
+    <!--  Defining the Dependency  -->
+
+<!--    <bean id="diobj"-->
+<!--          class="IOC.Azure">-->
+<!--    </bean>-->
+
+    <bean id="fwr"
+          class="IOC.FrameWork">
+
+        <!-- setting up setter injection   -->
+        <property name="cloud" ref="obj"/>
     </bean>
+
 
 </beans>
